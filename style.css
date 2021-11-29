@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/* ============
+
+Global variables
+================*/
+:root{
+    --main-bg:  hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line-color: hsl(215, 32%, 27%);
+    --white-color: hsl(0, 0%, 100%);
+    --primary-blue-color: hsl(215, 51%, 70%);
+    --primary-cyan-color: hsl(178, 100%, 50%);
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    outline: none;
+    overflow-x: hidden;
+    
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    background-color: var(--main-bg);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.container{
+    width: 800px;
+    height: 700px;
+    margin: auto;
+    position: relative;
+}
+
+.card-img img{
+    width: 100%;
+
+}
+.card-img{
+    margin: 20px;
+    box-shadow: 3px 3px 8px var(--main-bg), -3px -3px -8px var(--main-bg);
+}
+
+
+.card{
+    width: 400px;
+    /* height: 600px; */
+    display: flex;
+    flex-direction: column;
+    background-color: var(--card-bg);
+    /* margin: auto; */
+    margin-top:20% ;
+    left: 25%;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px var(--main-bg), -3px -3px -8px var(--main-bg);
+
+}
+.card-title{
+    color: var(--white-color);
+    margin: 20px;
+}
+.card-paragraph{
+    color: var(--primary-blue-color);
+    margin: 20px;
+    letter-spacing: 2px;
+    font-weight: 200;
+}
+.card-stats{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    justify-content: space-between;
+}
+.col-1{
+    position: relative;
+}
+.col-1 img{
+    position: absolute;
+    top: 0;
+    left:0 ;
+}
+.col-1 h1{
+   
+    font-size: 18px;
+    color: var(--primary-cyan-color);
+    margin-left: 15px;
+
+}
+.col-2{
+    position: relative;
+}
+.col-2 img{
+    position: absolute;
+    top: 0;
+    left:0 ;
+    
+}
+.col-2 p{
+   
+    font-size: 15px;
+    color: var(--primary-blue-color);
+    margin-left: 23px;
+   
+
+}
+.line{
+    background-color: var(--line-color);
+    
+    height: 2px;
+    margin: 20px;
+}
+.authored{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin: 20px;
+    color: var(--primary-blue-color);
+    justify-content: space-evenly;
+}
+.authored span{
+    color: var(--white-color);
+    
+}
